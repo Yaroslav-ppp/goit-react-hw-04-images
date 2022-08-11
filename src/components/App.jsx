@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-// import {withErrorBoundary} from 'react-error-boundary'
+
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {Container} from './App.styled'
