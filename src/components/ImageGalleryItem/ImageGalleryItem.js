@@ -13,22 +13,17 @@ onClick={onClick}
 
 >
 
-
-
    <ImageGalleryPicture 
   
+
 
  src={webformatURL} 
  alt={tag}
  
  /> 
 
-
-
 </ImageItem>
    
-  
- 
    )
    }
  
