@@ -31,8 +31,6 @@ export class App extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     
-  
-
     if (prevState.keyWord !== this.state.keyWord) {
       console.log('прев', prevState.keyWord)
       
@@ -51,7 +49,6 @@ export class App extends Component {
         new Error(`there are no photos of ${this.state.keyWord}`),
       );
     })
-    
     
   
   .then((data) => {
