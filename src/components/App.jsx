@@ -52,7 +52,7 @@ export class App extends Component {
     
   
   .then((data) => {
-    
+   
  
   this.setState({images: data.hits})
   
