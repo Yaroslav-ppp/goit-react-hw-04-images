@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Container } from './App.styled';
 import { LoadMore } from './LoadMoreBtn/LoadMoreBtn';
 import Searchbar from './Searchbar/Searchbar';
-import ImageGallery from './ImageGallery/ImageGallery';
+import {ImageGallery} from './ImageGallery/ImageGallery';
 import Modal from './Modal/Modal';
 
 const scroll = Scroll.animateScroll;
@@ -92,7 +92,7 @@ export class App extends Component {
             <img src={this.state.largeImageURL} alt={this.state.tags} />
           </Modal>
         )}
-        {this.state.images.length > 0 && (
+        {this.state.images.length > 0 && this.state.status === 'resolved' && (
           <LoadMore onClick={this.handleLoadMore} />
         )}
 
